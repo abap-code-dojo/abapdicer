@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>abapDicer: Score sheet</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>COUNT_DICE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Count number of dice with specific point</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>return score sheet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_SCORE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get score for result cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_ABAPDICER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for abapDicer (kniffel)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_CHANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for chance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_FULL_HOUSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for full house</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_HIGH_STRAIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for high straight</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_LOW_STRAIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for low straight</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_ROLL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for decision and dice roll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_UPPER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for upper part decision and dice roll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>GET_VALUE_FOR_X_OFAKIND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get value for x of a kind</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z_ADICER_SCORESHEET</CLSNAME>
+     <CMPNAME>INIT_SCORESHEET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>initialize score sheet with &quot;empty value&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

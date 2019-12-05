@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>abapDicer: strategy</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>DECIDE_ON_RESULT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entscheidung in welches Kästen das Ergebnis soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>DECIDE_ON_RESULT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Decision which result cell will have the score</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>DECIDE_ON_ROLL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entscheidung über die Verwendung des Würfelwurfs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>DECIDE_ON_ROLL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Decision about the dice roll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>DICEROLL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ganze Zahl mit Vorzeichen (-2.147.483.648 .. 2.147.483.647)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>DICEROLL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>SCORESHEET</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ganze Zahl mit Vorzeichen (-2.147.483.648 .. 2.147.483.647)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_ADICER_STRATEGY</CLSNAME>
+     <CMPNAME>SCORESHEET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>.</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
