@@ -63,11 +63,11 @@ Each strategy has two methods:
 * DECIDE_ON_ROLL
 * DECIDE_ON_RESULT
 
-## Decide On Roll
+### Decide On Roll
 
 The method gets a set of five dice. Dice can be kept by marking the column KEEP with an X. All other dice will be rolled again. A round goes up to 3 rolls.
 
-## Decide On Result
+### Decide On Result
 
 After the maximum of rolls ( three times) the stategy has to decide which result cell on the score sheet should be used with the current dice values.
 
