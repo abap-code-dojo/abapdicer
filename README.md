@@ -7,6 +7,10 @@ A Code-dojo project at Inwerken AG
 
 abapDicer is a dice game developed at weekly Code-Dojo. We made technical concepts, discussions about naming, techniques and so on.
 
+# screenshot
+
+<img src="https://github.com/abap-code-dojo/abapdicer/blob/master/abapdicer1.png" width="100%">
+
 # Technical requirements
 
 ## SAP Style guide
