@@ -14,6 +14,8 @@
     <item>/.gitlab-ci.yml</item>
     <item>/abaplint.json</item>
     <item>/azure-pipelines.yml</item>
+    <item>/abap-dicer-logo.png</item>
+    <item>/abapdicer1.png</item>
    </IGNORE>
   </DATA>
  </asx:values>
