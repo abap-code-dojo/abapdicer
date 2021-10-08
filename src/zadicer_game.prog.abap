@@ -57,6 +57,8 @@ CLASS main IMPLEMENTATION.
         strategies    = VALUE #( ( strategy_name  = name_of_strategy ) )
         variant       = space
         seed          = seed ).
+    game->show_result( ).
+
   ENDMETHOD.
 
 ENDCLASS.

@@ -19,4 +19,8 @@ interface ZIF_ADICER_GAME_ENGINE
       !STRATEGIES type TT_STRATEGIES
       !VARIANT type CHAR1
       !SEED type I .
+  methods GET_AVERAGE
+    returning
+      value(RESULT) type I .
+  methods SHOW_RESULT .
 endinterface.

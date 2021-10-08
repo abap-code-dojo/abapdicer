@@ -1,11 +1,11 @@
-CLASS z_adicer_game_engine DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class Z_ADICER_GAME_ENGINE definition
+  public
+  final
+  create public .
 
-  PUBLIC SECTION.
+public section.
 
-    INTERFACES zif_adicer_game_engine .
+  interfaces ZIF_ADICER_GAME_ENGINE .
   PROTECTED SECTION.
 private section.
 
@@ -30,7 +30,6 @@ private section.
     importing
       !ROW
       !COLUMN .
-  methods SHOW_RESULT .
   methods INIT
     importing
       !SEED type I .
@@ -191,7 +190,34 @@ CLASS Z_ADICER_GAME_ENGINE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD show_result.
+  METHOD validate_diceroll.
+    is_valid = abap_true.
+  ENDMETHOD.
+
+
+  METHOD write_turn.
+
+  ENDMETHOD.
+
+
+  METHOD zif_adicer_game_engine~get_average.
+
+    DATA score_line  TYPE zadicer_scoresheet_grid.
+    DATA grand_total_sum TYPE i.
+
+    LOOP AT players INTO DATA(playerdata).
+      score_line-scoresheet  = playerdata-score_sheet.
+      score_line-scores      = playerdata-score_sheet->get_scoresheet_in_line( ).
+*      APPEND score_line TO score_table.
+      ADD score_line-grand_total TO grand_total_sum.
+    ENDLOOP.
+
+    result = grand_total_sum / zif_adicer_game_engine~number_of_rounds.
+
+  ENDMETHOD.
+
+
+  METHOD zif_adicer_game_engine~show_result.
 
     DATA score_line  TYPE zadicer_scoresheet_grid.
     DATA grand_total_sum TYPE i.
@@ -220,25 +246,15 @@ CLASS Z_ADICER_GAME_ENGINE IMPLEMENTATION.
         DATA(cols) = score_grid->get_columns( ).
         cols->get_column( 'SCORESHEET' )->set_technical( abap_true ).
         cols->set_color_column( '_COLOR_' ).
-        cast cl_salv_column_table( cols->get_column( 'UPPER_BONUS' ) )->set_color( value #( col = col_key int = 0 ) ).
-        cast cl_salv_column_table( cols->get_column( 'UPPER_RESULT' ) )->set_color( value #( col = col_total int = 0 ) ).
-        cast cl_salv_column_table( cols->get_column( 'LOWER_ABAPDICER' ) )->set_color( value #( col = col_group ) ).
-        cast cl_salv_column_table( cols->get_column( 'LOWER_RESULT' ) )->set_color( value #( col = col_total int = 0 ) ).
-        cast cl_salv_column_table( cols->get_column( 'GRAND_TOTAL' ) )->set_color( value #( col = col_total int = 1 ) ).
+        CAST cl_salv_column_table( cols->get_column( 'UPPER_BONUS' ) )->set_color( VALUE #( col = col_key int = 0 ) ).
+        CAST cl_salv_column_table( cols->get_column( 'UPPER_RESULT' ) )->set_color( VALUE #( col = col_total int = 0 ) ).
+        CAST cl_salv_column_table( cols->get_column( 'LOWER_ABAPDICER' ) )->set_color( VALUE #( col = col_group ) ).
+        CAST cl_salv_column_table( cols->get_column( 'LOWER_RESULT' ) )->set_color( VALUE #( col = col_total int = 0 ) ).
+        CAST cl_salv_column_table( cols->get_column( 'GRAND_TOTAL' ) )->set_color( VALUE #( col = col_total int = 1 ) ).
         SET HANDLER handle_score_double_click FOR score_grid->get_event( ).
         score_grid->display( ).
       CATCH cx_salv_msg cx_salv_not_found cx_salv_data_error.
     ENDTRY.
-
-  ENDMETHOD.
-
-
-  METHOD validate_diceroll.
-    is_valid = abap_true.
-  ENDMETHOD.
-
-
-  METHOD write_turn.
 
   ENDMETHOD.
 
@@ -261,7 +277,6 @@ CLASS Z_ADICER_GAME_ENGINE IMPLEMENTATION.
 
     init( seed ).
     play_game(  ).
-    show_result( ).
 
   ENDMETHOD.
 ENDCLASS.

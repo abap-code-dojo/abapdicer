@@ -1,18 +1,18 @@
-class Z_ADICER_STRATEGY_TST_5OFAKIND definition
-  public
-  final
-  create public .
+CLASS z_adicer_strategy_tst_5ofakind DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
+  PUBLIC SECTION.
 
-  interfaces ZIF_ADICER_STRATEGY .
-protected section.
-private section.
+    INTERFACES zif_adicer_strategy .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS Z_ADICER_STRATEGY_TST_5OFAKIND IMPLEMENTATION.
+CLASS z_adicer_strategy_tst_5ofakind IMPLEMENTATION.
 
 
   METHOD zif_adicer_strategy~decide_on_result.
